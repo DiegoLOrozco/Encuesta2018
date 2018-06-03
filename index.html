@@ -4,37 +4,45 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Encuesta</title>
     <link rel="force-svg" href="http://berjon.com/blog/2009/07/force-svg.html">
-    <script type="application/javascript">(function()
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script>
+(function () {
+    webshim.setOptions('forms', {
+        lazyCustomMessages: true,
+        iVal: {
+            sel: '.ws-validate',
+            handleBubble: 'hide', // hide error bubble
 
-{
+            //add bootstrap specific classes
+            errorMessageClass: 'help-block',
+            successWrapperClass: 'has-success',
+            errorWrapperClass: 'has-error',
 
-  function ForceSVGInHTML()
+            //add config to find right wrapper
+            fieldWrapper: '.form-group'
+        }
+    });
 
-  {
-
-    window.removeEventListener("load", ForceSVGInHTML, true);
-
-    var svgs = document.getElementsByTagName("svg");
-
-    for (var i = 0; i < svgs.length; i++) {
-
-      var svg = svgs[i];
-
-      var div = document.createElement("div");
-
-      div.appendChild(svg.cloneNode(true));
-
-      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
-
-      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
-
-    }
-
-  }
-
-  window.addEventListener("load", ForceSVGInHTML, true);
-
-})();</script>
+    //load forms polyfill + iVal feature
+    webshim.polyfill('forms');
+})();        
+</script> <style>
+    body {
+    margin: 10px;
+    padding: 10px;
+}
+form {
+    max-width: 480px;
+    margin: auto;
+}
+.form-group >[class*="col-"] + .ws-errorbox {
+    padding: 0 15px;
+}
+    </style>
   </head>
   <body>
     <h2 style=" text-align: center;"> <span style="font-family: Century Gothic; color: #663333;"></span></h2>
@@ -47,36 +55,57 @@
                   <title>Layer 1</title>
                   <g id="svg_124">
                     <g id="svg_16">
-                      <text transform="matrix(0.436457, 0, 0, 0.347491, 14.201, 41.7411)"
-                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
-                        font-size="45" id="svg_4" y="73.166818" x="115.079126" stroke-width="0"
+                      <text transform="matrix(0.436457, 0, 0, 0.347491, 14.201, 41.7411)"
+
+                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
+
+                        font-size="45" id="svg_4" y="73.166818" x="115.079126" stroke-width="0"
+
                         stroke="#000000" fill="#3f3f3f">Consultoría</text>
-                      <line stroke-width="3" id="svg_10" y2="77.416593" x2="112.001856"
-                        y1="77.416593" x1="13.36248" stroke-linecap="null" stroke-linejoin="null"
+                      <line stroke-width="3" id="svg_10" y2="77.416593" x2="112.001856"
+
+                        y1="77.416593" x1="13.36248" stroke-linecap="null" stroke-linejoin="null"
+
                         stroke="#cccccc" fill="none"></line>
-                      <text transform="matrix(0.436457, 0, 0, 0.347491, 14.201, 41.7411)"
-                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
-                        font-size="30" id="svg_5" y="113.166818" x="111.079146"
+                      <text transform="matrix(0.436457, 0, 0, 0.347491, 14.201, 41.7411)"
+
+                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
+
+                        font-size="30" id="svg_5" y="113.166818" x="111.079146"
+
                         stroke-width="0" stroke="#000000" fill="#3f3f3f">Política</text>
                     </g>
                     <g id="svg_6">
-                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
-                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
-                        font-size="100" id="svg_1" y="-136.000765" x="-189.90384"
+                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
+
+                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
+
+                        font-size="100" id="svg_1" y="-136.000765" x="-189.90384"
+
                         stroke-width="0" stroke="#000000" fill="#cc167a">D</text>
-                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
-                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
-                        font-size="101" id="svg_2" y="-135.500765" x="-178.90384"
+                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
+
+                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
+
+                        font-size="101" id="svg_2" y="-135.500765" x="-178.90384"
+
                         stroke-width="0" stroke="#000000" fill="#025959">L</text>
-                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
-                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
-                        font-size="100" id="svg_3" y="-136.000765" x="-149.90384"
+                      <text transform="matrix(0.541667, 0, 0, 0.454545, 155.417, 103.636)"
+
+                        xml:space="preserve" text-anchor="middle" font-family="Sans-serif"
+
+                        font-size="100" id="svg_3" y="-136.000765" x="-149.90384"
+
                         stroke-width="0" stroke="#000000" fill="#777777">O</text>
-                      <path id="svg_11" d="m6.24991,43.338421c-1.31082,0.038639 -3.22943,-0.560909 -1.88935,-1.89772c1.45926,-0.509529 -0.25946,-2.197281 1.20304,-2.991821c1.17434,-1.479088 2.76956,-2.83046 3.2511,-4.63728c-0.07529,-1.225891 -1.72739,-1.950899 -0.93927,-3.30727c-0.77347,-2.169991 -0.59473,-4.66818 0.81738,-6.619089c1.1987,-1.81226 2.65418,-3.73181 2.50089,-5.925001c-1.50367,0.55546 -3.095099,1.04274 -4.74988,0.790451c-1.55567,-0.12772 -2.95099,0.98683 -4.53809,0.38048c-1.60873,-0.29546 -2.56534,-2.1991 -1.36609,-3.31273c1.31085,-0.990471 3.23645,-1.02274 4.48663,-2.128651c1.64939,-1.20909 3.17472,-2.844999 5.44754,-3.05864c1.0048,-0.20363 1.43595,-1.09682 1.9917,-1.76682c0.46207,1.06182 1.2659,2.00136 2.47596,2.47228c2.45971,1.26091 3.072351,3.92818 3.97964,6.11955c0.670559,1.71727 1.22958,3.509541 2.353001,5.042271c0.011929,0.73546 -1.24909,1.04591 -0.397591,1.90863c0.44309,2.3382 0.46204,4.733179 0.42304,7.09955c-0.747501,1.15773 -1.42783,2.450909 -0.43115,3.778618c0.66571,1.624561 2.323179,2.68956 3.138941,4.221832c0.46097,0.794098 -0.899132,1.946369 0.79517,1.746819c1.546999,0.72456 0.297909,2.492729 -1.24094,1.978649c-5.766602,0.129532 -11.545621,0.259521 -17.311671,0.105892l0,0l0,0z"
-                        stroke-linecap="null" stroke-linejoin="null" stroke-width="0"
+                      <path id="svg_11" d="m6.24991,43.338421c-1.31082,0.038639 -3.22943,-0.560909 -1.88935,-1.89772c1.45926,-0.509529 -0.25946,-2.197281 1.20304,-2.991821c1.17434,-1.479088 2.76956,-2.83046 3.2511,-4.63728c-0.07529,-1.225891 -1.72739,-1.950899 -0.93927,-3.30727c-0.77347,-2.169991 -0.59473,-4.66818 0.81738,-6.619089c1.1987,-1.81226 2.65418,-3.73181 2.50089,-5.925001c-1.50367,0.55546 -3.095099,1.04274 -4.74988,0.790451c-1.55567,-0.12772 -2.95099,0.98683 -4.53809,0.38048c-1.60873,-0.29546 -2.56534,-2.1991 -1.36609,-3.31273c1.31085,-0.990471 3.23645,-1.02274 4.48663,-2.128651c1.64939,-1.20909 3.17472,-2.844999 5.44754,-3.05864c1.0048,-0.20363 1.43595,-1.09682 1.9917,-1.76682c0.46207,1.06182 1.2659,2.00136 2.47596,2.47228c2.45971,1.26091 3.072351,3.92818 3.97964,6.11955c0.670559,1.71727 1.22958,3.509541 2.353001,5.042271c0.011929,0.73546 -1.24909,1.04591 -0.397591,1.90863c0.44309,2.3382 0.46204,4.733179 0.42304,7.09955c-0.747501,1.15773 -1.42783,2.450909 -0.43115,3.778618c0.66571,1.624561 2.323179,2.68956 3.138941,4.221832c0.46097,0.794098 -0.899132,1.946369 0.79517,1.746819c1.546999,0.72456 0.297909,2.492729 -1.24094,1.978649c-5.766602,0.129532 -11.545621,0.259521 -17.311671,0.105892l0,0l0,0z"
+
+                        stroke-linecap="null" stroke-linejoin="null" stroke-width="0"
+
                         stroke="#000000" fill="#3f3f3f"></path>
-                      <path id="svg_13" d="m103.853363,42.017521c-1.409424,0.268631 -2.496002,-1.528191 -0.748039,-1.72364c1.537804,0.024559 -0.382423,-1.277721 1.00589,-1.715462c1.596275,-1.321808 3.179558,-2.699997 4.20224,-4.40136c-0.514595,-0.57954 -1.366096,-1.133648 -1.254494,-1.926819c1.002632,-0.28953 2.498138,-0.093639 2.557739,-1.437271c0.91217,-2.424559 1.155914,-4.98864 1.355217,-7.51454c-1.006393,-0.67728 -3.079887,-0.0359 -4.487694,-0.380899c-2.135223,-0.488649 0.795715,-1.424561 1.736061,-1.34729c0.844994,0.001369 2.096245,-0.440451 0.681419,-0.77817c1.193268,-0.046831 2.90873,-1.33046 0.947906,-1.79274c1.453827,-0.8859 0.33313,-2.81319 -0.274628,-3.921361c-0.914345,-1.33818 -2.420715,-2.307739 -4.121552,-2.82455c-0.274628,-1.36453 2.348137,-0.96137 3.412506,-1.032269c1.611481,0.05227 3.253815,-0.01636 4.657257,-0.760441c1.896904,-0.7441 3.508904,0.49773 5.244415,0.760441c1.754448,0.09546 3.579308,-0.26772 5.289368,0.153649c0.529236,0.31999 1.409973,0.82454 0.348846,1.06635c-2.024231,0.955911 -3.915192,2.36863 -4.422699,4.37408c-0.765381,1.11594 0.591484,2.08411 -0.648926,2.88455c-0.013,0.94138 2.879478,1.073181 1.26046,1.536821c1.109322,0.509998 3.48941,0.188189 3.733162,1.321829c-1.008583,0.67227 -2.420723,0.406811 -3.628632,0.470001c-0.408936,0.117729 -1.43705,-0.289101 -1.280518,0.30954c-0.080688,2.680899 0.740479,5.31773 1.534538,7.89093c0.001099,1.26091 3.665474,0.545439 1.628792,1.976799c-1.504181,1.09864 0.701477,2.63773 1.464691,3.615471c1.040009,1.072258 2.885986,1.61499 2.732178,3.189079c1.058929,0.064091 2.318329,1.46273 0.854218,1.811359c-7.923531,0.1409 -15.854065,0.23819 -23.779724,0.195911c0,0 0,0 0,0l0,0z"
-                        stroke-linecap="null" stroke-linejoin="null" stroke-width="0"
+                      <path id="svg_13" d="m103.853363,42.017521c-1.409424,0.268631 -2.496002,-1.528191 -0.748039,-1.72364c1.537804,0.024559 -0.382423,-1.277721 1.00589,-1.715462c1.596275,-1.321808 3.179558,-2.699997 4.20224,-4.40136c-0.514595,-0.57954 -1.366096,-1.133648 -1.254494,-1.926819c1.002632,-0.28953 2.498138,-0.093639 2.557739,-1.437271c0.91217,-2.424559 1.155914,-4.98864 1.355217,-7.51454c-1.006393,-0.67728 -3.079887,-0.0359 -4.487694,-0.380899c-2.135223,-0.488649 0.795715,-1.424561 1.736061,-1.34729c0.844994,0.001369 2.096245,-0.440451 0.681419,-0.77817c1.193268,-0.046831 2.90873,-1.33046 0.947906,-1.79274c1.453827,-0.8859 0.33313,-2.81319 -0.274628,-3.921361c-0.914345,-1.33818 -2.420715,-2.307739 -4.121552,-2.82455c-0.274628,-1.36453 2.348137,-0.96137 3.412506,-1.032269c1.611481,0.05227 3.253815,-0.01636 4.657257,-0.760441c1.896904,-0.7441 3.508904,0.49773 5.244415,0.760441c1.754448,0.09546 3.579308,-0.26772 5.289368,0.153649c0.529236,0.31999 1.409973,0.82454 0.348846,1.06635c-2.024231,0.955911 -3.915192,2.36863 -4.422699,4.37408c-0.765381,1.11594 0.591484,2.08411 -0.648926,2.88455c-0.013,0.94138 2.879478,1.073181 1.26046,1.536821c1.109322,0.509998 3.48941,0.188189 3.733162,1.321829c-1.008583,0.67227 -2.420723,0.406811 -3.628632,0.470001c-0.408936,0.117729 -1.43705,-0.289101 -1.280518,0.30954c-0.080688,2.680899 0.740479,5.31773 1.534538,7.89093c0.001099,1.26091 3.665474,0.545439 1.628792,1.976799c-1.504181,1.09864 0.701477,2.63773 1.464691,3.615471c1.040009,1.072258 2.885986,1.61499 2.732178,3.189079c1.058929,0.064091 2.318329,1.46273 0.854218,1.811359c-7.923531,0.1409 -15.854065,0.23819 -23.779724,0.195911c0,0 0,0 0,0l0,0z"
+
+                        stroke-linecap="null" stroke-linejoin="null" stroke-width="0"
+
                         stroke="#000000" fill="#3f3f3f"></path> </g> </g> </g>
               </svg></div>
           </td>
@@ -87,70 +116,79 @@
             <h2 style="text-align: center;"><span style="color: #824141; font-family: Century Gothic;">México
                 2018</span></h2>
           </td>
-          <td><img src="https://webadictos.com/media/2015/06/Resultados-de-las-elecciones-2015-mexico.jpg"
+          <td><img src="https://webadictos.com/media/2015/06/Resultados-de-las-elecciones-2015-mexico.jpg"
+
               alt="" title="icono" style="width: 185px; height: 130px;"><br>
           </td>
         </tr>
       </tbody>
     </table>
     <p> </p>
-    <form name="Encuesta" action="" method="GET" autocomplete="on" enctype="application/x-www-form-urlencoded"
-      target="_parent" style="background-color: #cccccc;">
-      <p style="margin-left: 40px;"><span style="font-family: Century Gothic;"><strong><br>
-          </strong></span></p>
-      <p style="margin-left: 40px;"><span style="font-family: Century Gothic;"><strong>Edad</strong>
-        </span><input name="Edad" id="Edad" value="18" form="Encuesta" min="18"
-          max="120" step="1" required="required" data-show-value="true" oninput="Edad_disp.value = Edad.value"
-          type="range"><span style="font-family: Century Gothic;"> <output id="Edad_disp"></output>
-          <br>
-        </span></p>
-      <p style="width: 795px; margin-left: 40px;"><span style="font-family: Century Gothic;"><strong>¿Cómo
-            te identificas?</strong>
-          <select name="Sexo" required="required" form="Encuesta">
-            <option value="-">Elige...</option>
-            <option value="M">Mujer</option>
-            <option value="H">Hombre</option>
-            <option value="O">Otro</option>
-          </select>
-        </span> </p>
-      <span style="font-family: Century Gothic;"> </span>
-      <p><span style="font-family: Century Gothic;"><br>
-        </span></p>
-      <p style="margin-left: 40px;"><span style="font-family: Century Gothic;"><strong>¿Piensas
-            votar?</strong> <input name="yn" value="y" form="Encuesta" type="radio">Sí
-          <input name="yn" value="n" form="Encuesta" type="radio">No</span></p>
-      <span style="font-family: Century Gothic;"> </span>
-      <p style="margin-left: 40px;"><strong><span style="font-family: Century Gothic;">Si
-            en este momento fueran las elecciones, ¿por quién votarías?</span></strong></p>
-      <span style="font-family: Century Gothic;"> </span>
-      <p style="width: 1136px; margin-left: 80px;"> <span style="font-family: Century Gothic;"><input
-            name="Candidatos" value="AMLO" form="Encuesta" type="radio"><img src="http://periodicocontacto.com.mx/wp-content/uploads/2018/01/amlo.jpg"
-            alt="" title="AMLO" style="width: 150px; height: 100px;"> <input name="Candidatos"
-            value="Anaya" form="Encuesta" type="radio"><img src="https://heraldodemexico.com.mx/wp-content/uploads/2018/05/Ricardo_Anaya_CNA-2-1024x684.jpg"
-            alt="" title="Anaya" style="width: 150px; height: 100px;"></span><span
-          style="font-family: Century Gothic;"><input name="Candidatos" value="Meade"
-            form="Encuesta" type="radio"><img src="https://www.razon.com.mx/wp-content/uploads/2018/03/meade81.jpg"
-            alt="" title="Meade" style="width: 150px; height: 100px;"> <input name="Candidatos"
-            value="Bronco" form="Encuesta" type="radio"><img src="https://manana.blob.core.windows.net.optimalcdn.com/images/2015/10/07/bronco-focus-0-0.22-628-524.jpg"
-            alt="" title="Bronco" style="width: 150px; height: 100px;"><br>
-        </span></p>
-      <div style="margin-left: 80px;"><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well well-sm">
+            <form action="#" class="form-horizontal ws-validate">
+              <div class="form-group"> <label for="Edad" class="control-label">Edad*</label>
+                <input name="Edad" min="18" max="120" step="1" required="required"
+
+                  type="number"> </div>
+              <div class="form-group"> <label for="Sexo" class="control-label">¿Cómo
+                  te identificas?*</label>
+                <select class="custom-select" name="Sexo" required="required">
+                  <option value="">Elige...</option>
+                  <option value="M">Mujer</option>
+                  <option value="H">Hombre</option>
+                  <option value="O">Otro</option>
+                </select>
+              </div>
+              <div class="form-group"><label for="yn" class="control-label">¿Piensas
+                  votar?*</label> <input name="yn" value="y" required="" type="radio">
+                Sí <input name="yn" value="n" type="radio"> No </div>
+              <div> <label for="Candidatos" class="control-label">Si en este
+                  momento fueran las elecciones, ¿por quién votarías?*</label> <label><input
+
+                    name="Candidatos" value="AMLO" required="" type="radio"> <img
+
+                    src="http://periodicocontacto.com.mx/wp-content/uploads/2018/01/amlo.jpg"
+
+                    alt="" title="AMLO" style="width: 150px; height: 100px;"></label>
+                <label><input name="Candidatos" value="Anaya" type="radio"> <img
+
+                    src="https://heraldodemexico.com.mx/wp-content/uploads/2018/05/Ricardo_Anaya_CNA-2-1024x684.jpg"
+
+                    alt="" title="Anaya" style="width: 150px; height: 100px;"></label>
+                <label><input name="Candidatos" value="Meade" type="radio"> <img
+
+                    src="https://www.razon.com.mx/wp-content/uploads/2018/03/meade81.jpg"
+
+                    alt="" title="Meade" style="width: 150px; height: 100px;"></label>
+                <label><input name="Candidatos" value="Bronco" type="radio"> <img
+
+                    src="https://manana.blob.core.windows.net.optimalcdn.com/images/2015/10/07/bronco-focus-0-0.22-628-524.jpg"
+
+                    alt="" title="Bronco" style="width: 150px; height: 100px;"></label>
+              </div>
+              <div class="form-group"> <label for="Email" class="control-label">Correo
+                  electrónico</label> <input class="form-control" id="Email" placeholder="Email"
+
+                  type="email"> </div>
+              <div class="form-group">Los campos marcados con * son obligatorios</div>
+              <div class="form-group">
+                <div class="col-md-12 text-center"> <button type="submit" class="btn btn-primary">Enviar
+                    datos</button> </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div style="text-align: center;"><input name="Enviar" value="Enviar respuestas"
-form="Encuesta" formenctype="application/x-www-form-urlencoded" type="submit"></div>
-      <div style="text-align: center;"><br>
-      </div>
-    </form>
-    <p style="text-align: right;"> <span style="font-family: Century Gothic; color: #003333;"><strong><br>
-        </strong></span></p>
-    <div style="text-align: center;"><span style="font-family: Century Gothic; color: #003333;"><strong>DLO
-          Consultoría Política</strong> </span><br>
-      <span style="font-family: Century Gothic; color: #003333;"> </span></div>
-    <p style="margin-left: 40px; text-align: center;"><span style="font-family: Century Gothic; color: #003333;">Av.
-        Paseo de la Reforma 505, Cuahutémoc C.P. 06500, <br>
-      </span></p>
-    <p style="margin-left: 40px; text-align: center;"><span style="font-family: Century Gothic; color: #003333;">Ciudad
-        de México, México </span></p>
-    <div style="left: 1072px; top: 21.9167px; height: 137.283px;"></div>
+      <div style="text-align: center;"><span style="font-family: Century Gothic; color: #003333;"><strong>DLO
+            Consultoría Política</strong> </span><br>
+        <span style="font-family: Century Gothic; color: #003333;"> </span></div>
+      <p style="text-align: center;"><span style="font-family: Century Gothic; color: #003333;">Av.
+          Paseo de la Reforma 505, Cuahutémoc C.P. 06500 <br>
+          Ciudad de México, México </span></p>
+    </div>
+    
   </body>
 </html>
